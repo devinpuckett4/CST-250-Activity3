@@ -173,7 +173,7 @@ This one shows me starting inside a walled region. The F spreads only within tha
 
 ![Build success](duringfill.png)
 
-Figure 7 : Screenshots Fill In-Progress
+Figure 9 : Screenshots Fill In-Progress
 
 Here the fill has started and is spreading from the start cell. The F marks the cells we’ve reached so far. You can see it expanding step by step. Walls stop the fill and force it to move around the shapes. This shot captures the action while it’s still moving.
 
@@ -189,7 +189,7 @@ Here the fill has started and is spreading from the start cell. The F marks the 
 
 ![Build success](donefill.png)
 
-Figure 9 : Screenshot of Console Running
+Figure 10 : Screenshot of Console Running
 
 This is the board after the flood finishes. All reachable spaces are marked with F. The inside areas that are fully surrounded by walls stay untouched. That makes it easy to see what the algorithm could reach. It’s a clear “after” shot for the run.
 
