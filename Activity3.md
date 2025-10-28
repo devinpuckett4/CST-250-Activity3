@@ -22,6 +22,7 @@ Devin Puckett]
 FLOW CHART
 
 ![Build success](part1.png)
+
 Figure 1a: Flow chart of Count
 
 This flowchart shows how the CountToOne program works. The user enters a number and the program prints each step. If the number is 1, the program ends. If the number is less than or equal to zero, it reminds the user to start with a positive number. If the number is even, it cuts the number in half. If the number is odd, it adds one to make it even. The program keeps repeating these steps until it finally reaches 1.
@@ -72,13 +73,17 @@ This flowchart shows how flood fill spreads across a board. The program creates 
 
 
 UML Class Diagram
+
 ![Build success](Activity3uml.png)
+
 Figure 2: UML Class Diagram
 
 This diagram shows how each small console app talks to the code that does the real work. CountToOne.Program calls a Utility method that handles the recursion to reach one, keeping the user interface separate from the logic. The Factorial.Program uses a FactorialLogic class that solves the answer two ways and returns big results safely. GCD.Program sends two numbers into a Utility method that runs the Euclidean steps and gives back the greatest common divisor. For Flood Fill, the Program starts things up and relies on Utility to print the board and run the fill, while BoardModel and CellModel hold the grid data. The arrows make it clear that the UI pieces only call into helpers or models and do not mix display code with the core logic. This keeps things simple to read and easy to test or swap later.
 
 Part 1
+
 Figure 3: Part 1 App Running
+
 ![Build success](count1.png)
 
 This run shows my CountToOne program working with input 36. It prints each step so I can see how the value changes. Even numbers get divided by two, and odd numbers move up by one. The steps keep going until the value reaches 1. This proves the recursion is doing exactly what I expect.
@@ -101,7 +106,9 @@ This is the entry point that talks to the user. It asks for a positive number an
 
 
 Part 2
+
 Figure 4: Iterative and Recursive Match
+
 ![Build success](fact.png)
 
 I entered 5 and both methods returned 120. That tells me the two approaches agree. The iterative path multiplies in a loop. The recursive path calls itself and counts down. Same answer, two styles, and both are correct.
